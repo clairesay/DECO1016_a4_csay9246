@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Designer Signup 4</title>
+    <link rel="stylesheet" href="workshopstyles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zor1bbb.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body id="sign-up">
+    <!-- Header with Navigation options (user is now signed in) -->
+    <header class="header" id="navigationheader">
+        <a id="home-link" href="clientmembershipendpoint.html"><img id="logo" src="logo.png" alt="Workshop Logo"></a>
+        <!-- Navigation sits in header for desktop, moves out for mobile -->
+        <nav id="menu-items">
+            <a href="clientmembershipendpoint.html" id="mydash-link">My Dash</a>
+            <a id="projects-link">Projects</a>
+            <a id="messages-link">Messages</a>
+        </nav>
+        <!-- Profile Picture customised if selected by user -->
+        <img id="picture-link" id="pro" src="defaultprofile.png" alt="Default Profile Image">
+    </header>
+
+    <section class="signupdiv" id="signup4-designer">
+        <!-- Progress Meter showing how many steps in the sign up process the user is -->
+        <div class="progress-meter">
+            <div class="meter1"></div>
+            <div class="meter2"></div>
+            <div class="meter3"></div>
+            <div id="current" class="meter4"></div>
+        </div>
+        <!-- Profile edit message -->
+        <h2>Get a head start with a professional profile.</h2>
+        <!-- Form for extra details, including profile image, biography and design fields -->
+        <form id="extra-details">
+            <div class="non-box-fields">
+                <!-- Wrapped in extra label to accommodate for image display when user uploads -->
+                <label for="accountImage">Profile Photo
+                    <label id="accountImage">
+                        <input type="file" id="upload-image" name="accountImage" accept=".png, .jpg"
+                            onchange="readURL(this);" />
+                    </label>
+                </label>
+                <label for="shortBio">Short Bio
+                    <textarea id="shortBio" name="shortBio" maxlength="300"></textarea>
+                </label>
+            </div>
+            <!-- Modified checkbox selection for designs skills -->
+            <label for="box-fields">Design Fields</label>
+            <div class="box-fields">
+                <input type="checkbox" id="checkbox-one" name="switch-one" value="Advertising" />
+                <label for="checkbox-one">Advertising</label>
+                <input type="checkbox" id="checkbox-two" name="switch-one" value="App" />
+                <label for="checkbox-two">App</label>
+                <input type="checkbox" id="checkbox-three" name="switch-one" value="Architectural" />
+                <label for="checkbox-three">Architectural</label>
+                <input type="checkbox" id="checkbox-four" name="switch-one" value="Automotive" />
+                <label for="checkbox-four">Automotive</label>
+                <input type="checkbox" id="checkbox-five" name="switch-one" value="Branding" />
+                <label for="checkbox-five">Branding</label>
+                <input type="checkbox" id="checkbox-six" name="switch-one" value="Engineering" />
+                <label for="checkbox-six">Engineering</label>
+                <input type="checkbox" id="checkbox-seven" name="switch-one" value="Exhibition" />
+                <label for="checkbox-seven">Exhibition</label>
+                <input type="checkbox" id="checkbox-eight" name="switch-one" value="Fashion" />
+                <label for="checkbox-eight">Fashion</label>
+                <input type="checkbox" id="checkbox-nine" name="switch-one" value="Furniture" />
+                <label for="checkbox-nine">Furniture</label>
+                <input type="checkbox" id="checkbox-ten" name="switch-one" value="Graphic" />
+                <label for="checkbox-ten">Graphic</label>
+                <input type="checkbox" id="checkbox-eleven" name="switch-one" value="Illustration" />
+                <label for="checkbox-eleven">Illustration</label>
+                <input type="checkbox" id="checkbox-twelve" name="switch-one" value="Information" />
+                <label for="checkbox-twelve">Information</label>
+                <input type="checkbox" id="checkbox-thirteen" name="switch-one" value="Interior" />
+                <label for="checkbox-thirteen">Interior</label>
+                <input type="checkbox" id="checkbox-fourteen" name="switch-one" value="Landscape" />
+                <label for="checkbox-fourteen">Landscape</label>
+                <input type="checkbox" id="checkbox-fifteen" name="switch-one" value="Packaging" />
+                <label for="checkbox-fifteen">Packaging</label>
+                <input type="checkbox" id="checkbox-sixteen" name="switch-one" value="Product" />
+                <label for="checkbox-sixteen">Product</label>
+                <input type="checkbox" id="checkbox-seventeen" name="switch-one" value="Theatre Set" />
+                <label for="checkbox-seventeen">Theatre Set</label>
+                <input type="checkbox" id="checkbox-eighteen" name="switch-one" value="Typographic" />
+                <label for="checkbox-eighteen">Typographic</label>
+                <input type="checkbox" id="checkbox-nineteen" name="switch-one" value="Web" />
+                <label for="checkbox-nineteen">Web</label>
+                <input type="checkbox" id="checkbox-twenty" name="switch-one" value="Other" />
+                <label for="checkbox-twenty">Other</label>
+            </div>
+        </form>
+        <!-- Cancel and Save buttons -->
+        <div class="progress-buttons">
+            <a id="warning" class="cancel" onclick="cancel();">Cancel</a>
+            <a href="designermembershipendpoint.html" class="next">Save and Finish</a>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+<script src="signup4script.js"></script>
+<script src="responsivenavbar.js"></script>
+
+</html>

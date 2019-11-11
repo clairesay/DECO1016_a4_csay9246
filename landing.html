@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="workshopstyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/zor1bbb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+</head>
+
+<body id="landing-page">
+    <!-- Header -->
+    <header class="header" id="landing-header">
+        <a id="home-link" href="landing.html"><img id="logo" src="logo.png" alt="Workshop Logo"></a>
+        <!-- Search Bar -->
+        <div id="search">
+            <input id="search-bar" type="text" placeholder="Search Jobs or Designers">
+            <button id="search-icon"><i class="fa fa-search"></i></button>
+        </div>
+        <!-- Anchor link to how it works infographic -->
+        <a id="how" href="#howitworks">How it Works</a>
+        <!-- Action Buttons -->
+        <a id="signin">Sign In</a>
+        <a id="signup" href="signup.html">Sign Up</a>
+    </header>
+
+    <!-- Main Section -->
+    <section id="landing-main">
+        <!-- Main Content with persuasive text -->
+        <article id="main-content">
+            <h1 id="big-heading">Where the ideal designer meets the perfect job.</h1>
+            <h3 class="subtitle">Workshop plays matchmaker between designers and clients.</h3>
+            <h3 class="subtitle">For either purposes, outsourcing has never been this easy.</h3>
+            <!-- Call to action button -->
+            <a href="signup.html" id="calltoaction">Join Workshop Now!</a>
+        </article>
+        <!-- Example of works done through workshop -->
+        <article id="main-image">
+            <figure id="example-gallery" class="example1">
+                <!-- Name of Designer -->
+                <figcaption id="label"><span id="example-designer">Annie Spratt, Graphic Design</span></figcaption>
+            </figure>
+        </article>
+    </section>
+
+    <!-- Secondary Section Explaining concept of Workshop -->
+    <section id="howitworks">
+        <div id="howitworks-toggle-wrapper">
+            <h1 id="medium-heading">How it works:</h1>
+            <!-- Toggling between how designers use workshop and how clients use workshop -->
+            <div class="box-fields" id="landing-boxes">
+                <!-- Appropriate functions to hide and show relevant content -->
+                <input type="radio" id="client-radio" class="info-choice-client" name="info-choice" value="client-radio"
+                    onclick="hireContent();" checked />
+                <label for="client-radio">I want to Hire</label>
+                <input type="radio" id="designer-radio" class="info-choice-designer" name="info-choice"
+                    value="designer-radio" onclick="designContent();" />
+                <label for="designer-radio">I want to Design</label>
+            </div>
+        </div>
+        <!-- How it works Content divided into hire and design sections. -->
+        <article id="steps">
+            <article id="hire-content">
+                <div class="howitworks-step">
+                    <p> Upload details about your project. We'll notify relevant designers of your posts.</p>
+                    <img class="howitworks-svg" src="files.svg" alt="Client Gathering Details">
+                </div>
+                <div class="howitworks-step">
+                    <p> Designers bid to work on your project. You choose who you work against skillsets.</p>
+                    <img class="howitworks-svg" src="dealorange.svg" alt="Client Making Deal">
+                </div>
+                <div class="howitworks-step">
+                    <p> Payment is released once the project is completed to your standards. Easy as.</p>
+                    <img class="howitworks-svg" src="exchangeorange.svg" alt="Client Exchanging Pay for Work">
+                </div>
+            </article>
+            <article id="design-content">
+                <div class="howitworks-step">
+                    <p> Get notified regularly for design jobs most relevant to your skillset and profile.</p>
+                    <img class="howitworks-svg" src="socialmedia.svg" alt="Designer Announcing Skills">
+                </div>
+                <div class="howitworks-step">
+                    <p> Bid for the project using a quick elevator pitch; short and snappy is the way to go!</p>
+                    <img class="howitworks-svg" src="deal.svg" alt="Designer Making Deal">
+                </div>
+                <div class="howitworks-step">
+                    <p> Once you complete a job, your payment gets released through Workshop. Easy as.</p>
+                    <img class="howitworks-svg" src="exchange.svg" alt="Designer Exchanging Work for Pay">
+                </div>
+            </article>
+        </article>
+    </section>
+</body>
+<script src="landingpagescript.js"></script>
+</html>

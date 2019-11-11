@@ -1,0 +1,1688 @@
+/* Common Styles */
+body {
+    background-color: rgba(255, 162, 128, 0.03);
+    margin: 0;
+}
+
+* {
+    font-family: din-2014, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.client {
+    background-color: rgb(255, 112, 67);
+}
+
+.designer {
+    background-color: rgb(29, 188, 198)
+}
+
+
+
+/* Edited SWAL Styles */
+button.swal-button--catch{
+    border: 2px solid rgb(255, 112, 67);
+    color: rgb(255, 112, 67);
+    background-color: transparent;
+    margin: auto 1em;
+    padding: 0.5em 1.5em;
+    border-radius: 0.3em;
+}
+
+.swal-button:not([disabled]):hover {
+    /* Increase the size a bit */
+    transform: scale(1.05);
+    background-color: transparent;
+}
+
+button.swal-button--cancel {
+    background-color: transparent;
+    color: rgb(179, 179, 179);
+    margin: auto 1em;
+    padding: 0.5em 1.5em;
+    border-radius: 0.3em;
+}
+
+button.swal-button--confirm {
+    border: 2px solid rgb(255, 112, 67);
+    color: rgb(255, 112, 67);
+    background-color: transparent;
+    margin: auto 1em;
+    padding: 0.5em 1.5em;
+    border-radius: 0.3em;
+}
+
+.swal-text:first-child {
+    margin-top: 2em;
+}
+
+.swal-footer {
+    margin: 0;
+}
+
+
+
+/* Progress Meter */
+.progress-meter {
+    display: inline-flex;
+    padding: 1em 1em 2em 0;
+}
+
+.meter1 {
+    margin-left: 10px;
+    height: 4px;
+    width: 80px;
+    background-color: #dadada;
+}
+
+ .meter2, .meter4 {
+    margin-left: 4px;
+    height: 4px;
+    width: 80px;
+	background-color: #dadada;
+}
+
+.meter3 {
+    margin-left: 4px;
+    height: 4px;
+    width: 20px;
+    background-color: #dadada;
+}
+
+#current {
+    background-color: rgb(255, 112, 67);
+    animation-name: meter-load;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    background-position: right bottom;
+}
+
+
+/* CSS Grid Common Grid Areas */
+.header { grid-area: header; }
+
+.footer { grid-area: footer; }
+
+section#my-dash { grid-area: dash; }
+
+
+
+/* CSS Grid Landing Page */
+body#landing-page {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 60px 1fr 1fr;
+    grid-template-areas: "header header header" ". landing ." ". extra .";
+}
+
+section#landing-main { grid-area: landing; }
+
+section#howitworks { grid-area: extra; }
+
+
+
+
+/* CSS Grid Sign Up */
+body#sign-up {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 4em 1fr 4em;
+    grid-template-areas: "header header header" ".  section ." "footer footer footer";
+}
+
+#signup1, #signup2, #signup3-designer, #signup4-designer, #signup3-client, #signup4-client{ grid-area: section; }
+footer {
+    grid-area: footer;
+}
+
+
+
+/* CSS Grid Designer Home Page */
+body#designer-home-page{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 60px minmax(min-content, max-content) minmax(min-content, max-content) 60px;
+    grid-template-areas: "header header" "d-banner ." "dash ." "footer footer";
+}
+
+section#designer-banner { grid-area: d-banner; }
+
+
+
+/* CSS Grid Client Home Page */
+body#client-home-page{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 60px minmax(min-content, max-content) minmax(min-content, max-content) 60px;
+    grid-template-areas: "header header" "c-banner ." "dash." "footer footer";
+}
+
+section#client-banner { grid-area: c-banner; }
+
+
+
+/* CSS Grid Landing Header*/
+#landing-header {
+    display: inline-grid;
+    grid-template-columns: 2.5% 10em 1fr 8em 8em 8em 2.5%;
+    grid-template-rows: 60px;
+    grid-template-areas: ". Logo Search How SignIn SignUp .";
+}
+
+
+/* CSS Grid Sign Up Header*/
+#signup-header {
+    display: inline-grid;
+    grid-template-columns: 2em 10em 2em 1fr 8em 1.5em;
+    grid-template-rows: 60px;
+    grid-template-areas: ". Logo . Quote SignIn.";
+}
+
+#signin-quote {
+    grid-area: Quote;
+    margin: auto 0;
+    text-align: right;
+}
+
+
+
+/* CSS Grid After Sign Up Navigation Header */
+#navigationheader {
+    display: inline-grid;
+    grid-template-columns: 2em 10em 1fr 4em 2em ;
+    grid-template-rows: 60px;
+    grid-template-areas: ". Logo Menu DefaultPicture . ";
+}
+
+
+
+/*Text Hierarchy*/
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+h4 {
+    font-weight: 300;
+}
+
+h5 {
+    font-weight:300;
+}
+
+h6{
+    font-weight:200;
+}
+
+p {
+    font-weight: 300;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+.hyperlink {
+    color: rgb(29, 188, 198);
+}
+
+.hyperlink:hover {
+    cursor: pointer;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+
+/* Button and Link Styles */
+button, a{
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: 0.2em;
+    margin: auto 1em;
+    padding: 0.25em 1em;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#signin {
+    background-color: transparent;
+    color: rgb(255, 112, 67);
+    border: 2px solid rgb(255, 112, 67);
+    grid-area: SignIn;
+    padding: 3px 6px;
+}
+
+#signup {
+    background-color: rgb(255, 112, 67);
+    color: #ffffff;
+    border: 2px solid rgb(255, 112, 67);
+    grid-area: SignUp;
+    padding: 3px 6px;
+}
+
+#how {
+    background-color: transparent;
+    border: 2px solid transparent;
+    grid-area: How;
+    padding: 0;
+}
+
+#calltoaction {
+    background-color: rgb(255, 112, 67);
+    color: #ffffff;
+    border: 2px solid rgb(255, 112, 67);
+    box-shadow: 2px 2px 4px #a5a5a5;
+    margin: 20px 0;
+    padding: 0.25em 1em;
+    width: 10em;
+}
+
+.next {
+    background-color: rgb(255, 112, 67);
+    color: #ffffff;
+    border: 2px solid rgb(255, 112, 67);
+    padding: 5px 10px;
+}
+
+.back {
+    background-color: transparent;
+    color: rgb(255, 112, 67);
+    border: 2px solid rgb(204, 204, 204);
+    padding: 5px 10px;
+}
+
+.cancel {
+    background-color: transparent;
+    color: rgb(204, 204, 204);
+    border: transparent;
+    padding: 5px 10px;
+}
+
+#banner-action-designer {
+    background-color: rgb(29, 188, 198);
+    color: #ffffff;
+    border: 2px solid rgb(29, 188, 198);
+    padding: 5px 10px;
+    margin: 0;
+    justify-self: center;
+    width: 120px;
+}
+
+#banner-action-client {
+    background-color: rgb(255, 112, 67);
+    color: #ffffff;
+    border: 2px solid rgb(255, 112, 67);
+    padding: 5px 10px;
+    margin: 0;
+    justify-self: center;
+    width: 120px;
+}
+
+.progress-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5em;
+}
+
+#mydash-link {
+    margin: 0;
+    padding: 0;
+    grid-area: MyDash;
+}
+
+#projects-link {
+    margin: 0;
+    padding: 0;
+    grid-area: Projects;
+}
+
+#messages-link {
+    margin: 0;
+    padding: 0;
+    grid-area: Messages;
+}
+
+#picture-link {
+    margin: 0;
+    padding: 0;
+    grid-area: DefaultPicture;
+    background-size: cover;
+    max-width: 50px;
+    border-radius: 0.3em;
+}
+
+
+/* Button and Link Pseudo Classes Styles */
+
+#picture-link:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    animation-name: pop-up;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+button:active {
+    animation-name: bounce;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+a:hover {
+    cursor: pointer;
+    animation-name: pop-up;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+a:active {
+    animation-name: bounce;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+
+/*Navigation */
+img#picture-link{
+    margin: auto auto;
+}
+
+#home-link {
+    padding: 0;
+    margin: auto 0;
+    grid-area: Logo;
+}
+
+#logo {
+    height: 1.75em;
+    display: flex;
+    justify-self: flex-start;
+}
+
+#search-bar {
+    margin: 1em 1em 1em 1em;
+    padding-left: 1em;
+    width: 65%;
+}
+
+#search-icon {
+    padding: 0;
+    margin: auto 0;
+    background-color: transparent;
+    border: none;
+    color: rgb(153, 153, 153);
+}
+
+#search-icon:hover {
+    animation-name: pop-up;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#search {
+    grid-area: Search;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    background-color: white;
+    box-shadow: 2px 2px 4px #a5a5a5;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 60px;
+}
+
+#menu-items {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: Menu;
+}
+
+#menu-items > a{
+    margin-right: 2em;
+    visibility: visible;
+}
+
+
+
+/* Landing Page Specific*/
+#landing-main {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: "MainContent MainImage"
+}
+
+#main-content {
+    padding: 2em 2em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: MainContent
+}
+
+#main-image {
+    grid-area: MainImage;
+    object-fit: cover;
+    animation-name: fade;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+/* .fade-in-menu {
+    animation-name: fade-in-menu;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-in-menu{
+    0% {
+        transform-origin: top center;
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform-origin: top center;
+        transform: scaleY(1);
+    }
+}
+
+.fade-out-menu {
+    animation-name: fade-out-menu;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out-menu{
+    0% {
+        transform-origin: top center;
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform-origin: top center;
+        transform: scaleY(0);
+    }
+} */
+
+
+
+#big-heading {
+    font-size: 3.6em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+#medium-heading {
+    font-size: 3.6em;
+    margin: 1em 0 0 0;
+}
+
+.subtitle {
+    margin: 0;
+    font-weight: 300;
+}
+
+#example-gallery {
+    width: 100%;
+    height: 90%;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 0 0;
+}
+
+figcaption#label {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+#howitworks {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.example1 {
+    background-image: url("umbrellas.png");
+}
+
+.example2 {
+    background-image: url("example2.jpg");
+}
+
+.example3 {
+    background-image: url("example3.jpg");
+}
+
+#example-designer {
+    
+    background: linear-gradient(transparent, rgb(61, 61, 61));
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2em;
+    padding: 1.25em 0.9em 0.75em 0.9em;
+}
+
+span {
+    width: 100%;
+}
+
+
+.howitworks-svg {
+    display: block;
+}
+
+
+
+
+/* Landing Page How it Works section */
+.box-fields label[for="client-radio"], label[for="designer-radio"] {
+    background-color: transparent;
+    color: rgb(153, 153, 153);
+    font-size: 16px;
+    text-align: center;
+    height: 1.5em;
+    padding: 5px 10px;
+    margin-right: 1em;
+    margin-bottom: 0;
+    border-radius: 0.2em;
+}
+
+.box-fields input:checked + label[for="client-radio"] {
+    background-color: transparent;
+    text-align: center;
+    color: rgb(255, 112, 67);
+    border: 1px solid rgb(255, 112, 67);
+    height: 1.5em;
+    margin-bottom: 0;
+}
+
+.box-fields input:checked + label[for="designer-radio"] {
+    background-color: transparent;
+    text-align: center;
+    color: rgb(29, 188, 198);
+    border: 1px solid rgb(29, 188, 198);
+    height: 1.5em;
+    margin-bottom: 0;
+}
+
+#hire-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#design-content {
+    display: none;
+    justify-content: space-between;
+}
+
+.howitworks-step {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 2em;
+    width: 33%;
+}
+
+.howitworks-step:hover {
+    animation-name: lift;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+
+/* All Sign Up */
+.signupdiv {
+    background-color: white;
+    border-radius: 0.3em;
+    box-shadow: 2px 2px 4px #a5a5a5;
+    margin-top: 2em;
+    padding: 2em;
+}
+
+
+
+/*Sign Up Step 1 */
+#signup1 > article{
+    display: inline-grid;
+    justify-content: start;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+}
+
+.choice {
+    background-color: #F2F2F2;
+    border: 3px solid #E8E8E8;
+    padding: 1em 2em;
+    margin-right: 1em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.choice h3 {
+    margin-bottom: 0;
+}
+
+.choice h2 {
+    margin-top: 0;
+}
+
+.choice[id="hirer"]:hover {
+    animation-name: saturateC;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.choice[id="designer"]:hover {
+    animation-name: saturateD;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+/*Sign Up Step 2 */
+form label {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+form input {
+    padding: 0.25em;
+}
+
+#signup2-name {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+#basicdetails {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-top: 1.5em;
+}
+
+label#email-label {
+    width: 45%;
+}
+
+#existing-account-link {
+    font-size: 1em;
+    margin: 0 ;
+    padding: 0;
+}
+
+#account-type-alert h2 {
+    margin-bottom: 0.25em;
+}
+
+
+
+/* Validation Styles */
+.valid {
+    border-color: rgb(102, 231, 151);
+}
+
+.invalid {
+    border-color: rgb(231, 102, 113);
+}
+
+.inactive-eye {
+    color: rgb(179, 179, 179);
+}
+
+.inactive-eye:hover {
+    animation-name: pop-up;
+    animation-duration: 0.1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.active-eye {
+    color: rgb(29, 188, 198);
+    animation-name: pop-up;
+    animation-duration: 0.1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.error-text {
+    font-size: 0.75em;
+    padding-left: 1em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#password-combo {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+
+
+/*Client and Designer Sign Up Step 3 Common Styles*/
+#signup3-client, #signup3-designer {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#signup3-client > img, #signup3-designer > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-half {
+    padding: 2em 1em 2em 2em;
+}
+
+.text-half h1, .text-half h2, .text-half p{
+    padding: 0 10px;
+}
+
+#welcome-title {
+    font-size: 3em;
+    margin-bottom: 0;
+    margin-top: 0.2em;
+}
+
+.welcome-img {
+    display: flex;
+    align-self: center;
+    height: 100%;
+}
+
+.welcome-img-mobile {
+    display: none;
+}
+
+
+
+/*Sign Up Client Step 4 */
+label[for="companyName"] {
+    width: 60%;
+    padding-bottom: 1em;
+}
+
+
+
+/*Client and Designer Sign Up Step 4 Common Styles*/
+#signup4-client, #signup4-designer {
+    padding: 2em;
+}
+
+label[for="shortBio"] {
+    width: 50%;
+}
+
+.non-box-fields {
+    display: inline-flex;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+.non-box-fields textarea{
+    max-width: 90%;
+    height: 8em;
+    overflow: auto
+}
+
+input, textarea{
+    resize: none;
+    border-radius: 4px;
+    border: 2px solid rgb(179, 179, 179);
+    margin: 10px;
+}
+
+input:focus, textarea:focus {
+    animation-name: pop-up;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+input[type="file"] {
+    display: none;
+}
+#accountImage {
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 0.25em;
+    background-image: url("imageplaceholder.svg");
+    background-size: cover;
+    width: 7em;
+    height: 7em;
+    overflow:hidden;    
+    cursor: pointer;
+    margin: 10px 16px 10px 10px;
+}
+
+input#upload-image {
+    visibility: hidden;
+}
+
+
+
+/*Radio or Checkbox Selection Edit*/
+input[type="checkbox"], input[type="radio"] {
+    display: none;
+}
+
+label[for="box-fields"] {
+    padding-bottom: 10px;
+}
+
+.box-fields {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.box-fields input {
+    /* hiding the radio*/
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.box-fields label {
+    background-color: transparent;
+    color: rgb(153, 153, 153);
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid rgb(179, 179, 179);
+    margin: 0 0.5em 0.5em 0;
+    border-radius: 0.2em;
+}
+
+.box-fields label:hover {
+    cursor: pointer;
+    animation-name: pop-up;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.bod-fields label:active {
+    animation-name: bounce;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.box-fields input:checked + label {
+    background-color: rgb(29, 188, 198);
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid rgb(29, 188, 198);
+}
+
+
+
+/*Client Membership Endpoint*/
+.profile-details {
+    height: 9.7em;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.designer-profile {
+    display: inline-flex;
+    align-items: center;
+    width: 95%;
+    padding: 1em;
+    border-radius: 0.3em;
+    border: 1px solid #a5a5a5;
+}
+
+.designer-profile *{
+    margin: 0.3em;
+}
+
+.profile-details * {
+    margin: 0;
+}
+
+.profile-thumbnail#designer {
+    width: 8vw;
+    border-radius: 0.2em;
+    border: 2px solid rgb(29, 188, 198);
+}
+
+.jobdescription {
+    width: 100%;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.visual-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3%;
+}
+
+.star-rating p {
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+}
+
+.stars {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.fa.fa-star.checked {
+    font-size: 1.2em;
+}
+
+.checked {
+    color: rgb(29, 188, 198);
+}
+
+
+
+/*Designer Membership Endpoint*/
+
+.jobprofile {
+    width: 90%;
+    padding: 1em;
+    border-radius: 0.3em;
+    border: 1px solid #a5a5a5;
+}
+
+.jobprofile:hover, .designer-profile:hover {
+    cursor: pointer;
+    animation-name: pop-up-minimal;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.jobprofile h3 {
+    font-weight: 500;
+}
+
+.jobprofile > p {
+    margin-top: 0.5em;
+}
+
+.jobprofile-details {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.profile-thumbnail#client {
+    width: 2.5em;
+    object-fit: contain;
+    border-radius: 0.2em;
+    border: 2px solid rgb(255, 112, 67);
+}
+
+.client-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 2em;
+}
+
+.client-profile > h3.client-name, #client-proflie img {
+    margin: 0 10px;
+}
+
+
+/* Client and Designer Membership Endpoint Common Styles */
+.dashboarddiv {
+    width: 80%;
+    border-radius: 0.3em;
+    background-color: #ffffff;
+    margin: 2em auto 0 auto;
+    padding: 1em;
+    box-shadow: 2px 2px 4px #a5a5a5;
+}
+
+.dashboarddiv>#steps{
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.dashboarddiv h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#my-dash > article {
+    margin: 1em 0;
+}
+
+/* 
+.slider {
+    width: 100vw;
+    height: 60vh;
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+  .slide {
+    width: 300px;
+    flex-shrink: 0;
+    height: 100%;
+  }
+
+  .slides > article {
+    scroll-snap-align: start;
+  } */
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps>p {
+    padding: 1em;
+    padding-right: 0;
+}
+
+.step {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.individual-skills {
+    display: inline-flex;
+    margin: auto 0;
+    align-self: flex-end;
+}
+
+.profile-details .individual-skills {
+    margin: 0;
+    margin-top: auto;
+}
+
+
+.individual-skills p {
+    border-radius: 0.25em;
+    padding: 0.2em 0.5em;
+    margin: 0.2em;
+    background-color: rgb(29, 188, 198);
+    text-align: center;
+    color: #ffffff;
+    border: transparent;
+}
+
+.individual-skills .greyed {
+    color:#6b6b6b;
+    margin: auto 1em auto 0;
+    max-width: 10%;
+    text-align: right;
+}
+
+.howitworks-step img {
+    width: 100%;
+    padding-bottom: 2em;
+}
+
+.box-fields#landing-boxes {
+    display: inline-flex;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+/*/////////////////////// Animations /////////////////////////// */
+
+@keyframes meter-load {
+    0% {
+        transform-origin: center left;
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform-origin: center left;
+        transform: scaleX(1);
+    }
+}
+
+
+@keyframes pop-up {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes pop-up-minimal {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.01);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(0.97);
+    }
+}
+
+@keyframes saturateC {
+    0% {
+        border-color:rgb(204, 204, 204);
+    }
+
+    100% {
+        border-color: rgb(255, 112, 67);
+        background-color: white;
+        transform: scale(1.02);
+    }
+}
+
+
+@keyframes saturateD {
+    0% {
+        border-color:rgb(204, 204, 204);
+    }
+
+    100% {
+        border-color: rgb(29, 188, 198);
+        background-color: white;
+        transform: scale(1.02);
+    }
+}
+
+@keyframes fade{
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in{
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes lift {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/*/////////////////////// Media Queries /////////////////////////// */
+
+@media only screen and (max-width: 425px) {
+
+    /* Common Header Objects */
+    #logo {
+        height: 1.5em;
+    }
+
+    /* Common Containers  */
+    .signupdiv:first-of-type, .dashboarddiv:first-of-type {
+        margin-top: 4em;
+    }
+
+
+
+    /* CSS Grid Landing Page */
+    body#landing-page {
+        grid-template-rows: 60px 1fr 1fr;
+        grid-template-areas: "header header header" ". landing ." ". extra .";
+    }
+
+
+    /* CSS Grid Designer Home Page */
+    body#designer-home-page{
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "d-banner" "dash";
+    } 
+
+
+    /* CSS Grid Client Home Page */
+    body#client-home-page{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "c-banner" "dash";
+    }
+
+
+    /* CSS Grid Landing Page Header */
+    #landing-header {
+        display: inline-grid;
+        grid-template-columns: 2.5% 30% 5% 30% 30% 2.5%;
+        grid-template-rows: 60px;
+        grid-template-areas: ". Logo . SignIn SignUp .";
+    }
+
+
+
+    /* Landing Page */
+    #landing-main{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 3em auto;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    #example-gallery {
+        width: 300px;
+        height: 45vh;
+        margin-top: 1em;
+    }
+
+    #main-content {
+        padding: 2em 0 0 0;
+    }
+
+    .howitworks-step img {
+        width: 150px;
+        padding-bottom: 0;
+    }
+
+    .howitworks-step {
+        width: 100%;
+        padding: 1em 0;
+        flex-direction: row-reverse;
+    }
+
+    .howitworks-step:nth-child(2n) {
+        flex-direction: row;
+    }
+
+    #hire-content {
+        display: flex;
+    }
+
+    #design-content {
+        display: none;
+    }
+
+    #hire-content, #design-content {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #hire-content p, #design-content p {
+        margin-left: 2em;
+    }
+
+    article#steps {
+        margin-top: -4em;
+    }
+
+
+
+    /* Landing Page Header */
+    #big-heading {
+        margin: 0 0 1em 0;
+        font-size: 1.8em;
+    }
+
+    #medium-heading {
+        font-size: 1.8em;
+        margin-top: 0;
+    }
+
+    #howitworks {
+        align-items: center;
+    }
+
+    #howitworks-toggle-wrapper {
+        margin: 1em 0 0 1em;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .box-fields#landing-boxes {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 2em;
+    }
+
+    .box-fields#landing-boxes label{
+        width: 120px;
+    }
+
+    #search-bar {
+        display: none;
+    }
+
+    #search-icon {
+        font-size: 20px;
+    }
+
+    #search {
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-end;
+    }
+
+    #signup, #signin {
+        margin: auto 0 auto 1.2em;
+        padding: 0.25em 0;
+    }
+
+
+
+    /* All Sign Up */
+    body#sign-up {
+        grid-template-columns: 1fr 10fr 1fr;
+    }
+
+    #signup-header {
+        display: inline-grid;
+        grid-template-columns: 1.5em 10em 2em 1fr 8em 1.5em;
+        grid-template-rows: 60px;
+        grid-template-areas: ". Logo . Quote SignIn.";
+    }
+
+
+    /* Sign Up 1 */
+    .choice {
+        padding: 0.5em 2em;
+        margin: 0 1em 2em 0;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    #signup1 > article{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    #signin-quote {
+        display: none;
+    }
+
+
+
+    /* Sign Up 2 Styles */
+
+    label#email-label {
+        width: 90%;
+    }
+
+
+    /* Sign Up 3 Common Styles */
+
+    #signup3-designer, #signup3-client {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .text-half {
+        padding: 1em 0 1em 1em;
+    }
+
+    .welcome-img {
+        display: none;
+    }
+
+    .welcome-img-mobile {
+        display: flex;
+        align-self: center;
+        max-width: 100%;
+    }
+
+
+
+    /* Sign Up 4 Common Styles */
+
+    .non-box-fields {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1em;
+        
+    }
+
+    label[for="shortBio"] {
+        width: 100%;
+    }
+
+    label[for="accountImage"] {
+        padding-bottom: 1em;
+    }
+
+
+
+    /* Sign Up 4 Client Styles */
+    label[for="companyName"] {
+        width: 100%;
+    }
+
+
+
+    /* After Signed In Navigation or Menu Header */
+    #menu-items {
+        display: flex;
+        grid-area: none;
+        position: fixed;
+        z-index: 0;
+        top: 60px;
+        left:0;
+        width: 100vw;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        background-color: rgb(255, 112, 67);
+        color: white;
+        box-shadow: 2px 2px 4px #a5a5a5;
+    }
+
+    #menu-items:focus {
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transform: scale(1.05);
+    }
+
+    #menu-items > a {
+        padding: 0.5em 2em;
+        margin: 0;
+        color: white;
+    }
+
+    #navigationheader {
+        display: grid;
+        grid-template-columns: 1em 10em 1fr 4em 1em ;
+        grid-template-rows: 60px;
+        grid-template-areas: ". Logo . DefaultPicture  . ";
+    }
+
+
+    /* Client and Designer Membership Endpoint Dashboard Common Styles */
+    .step {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .step p {
+        margin-top: 0.5em;
+    }
+
+    .jobprofile {
+        width: 90%;
+    }
+
+
+    .jobprofile-details {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+
+    .client-profile {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
+    .client-profile img {
+        margin: 5px
+    }
+
+    h3.remuneration {
+        margin: 0;
+        margin-left: auto;
+    }
+
+    .jobdescription {
+        width: 100%;
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    .greyed {
+        display: none;
+    }
+
+    #designer.profile-thumbnail#designer {
+        width: 20vw;
+    }
+
+    .star-rating {
+        margin: 0;
+        padding: 0;
+    }
+
+    .star-rating .stars {
+        margin: 0.2em 0;
+    }
+
+    .visual-rating {
+        margin: 0 1em 0 0;
+    }
+
+    .designer-profile {
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .banner-text {
+        margin: 1em 0;
+    }
+
+    .jobprofile-details .individual-skills{
+        align-self: flex-start;
+    }    
+
+
+
+}

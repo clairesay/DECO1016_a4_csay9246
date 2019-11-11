@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup 1</title>
+    <link rel="stylesheet" href="workshopstyles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zor1bbb.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+</head>
+
+<body id="sign-up">
+    <!-- Header, Simplified. Only containing home link and sign in-->
+    <header class="header" id="signup-header">
+        <a id="home-link" href="landing.html"><img id="logo" src="logo.png" alt="Workshop Logo"></a>
+        <p id="signin-quote">Have an existing account?</p>
+        <a id="signin">Sign In</a>
+    </header>
+
+    <!-- Signup section -->
+    <section class="signupdiv" id="signup1">
+        <!-- Progress Meter showing how many steps in the sign up process the user is -->
+        <div class="progress-meter">
+            <div id="current" class="meter1"></div>
+            <div class="meter2"></div>
+            <div class="meter3"></div>
+            <div class="meter4"></div>
+        </div>
+        <!-- Path selection for account type -->
+        <h2>Select an account type</h2>
+        <article id="hirer-designer">
+            <!-- Hirer choice card -->
+            <a href="signupstep2.html" class="choice" id="hirer">
+                <h3>I want to</h3>
+                <h2>hire a designer</h2>
+                <img class="choice-svg" src="todo.svg" alt="I want to hire a designer">
+            </a>
+            <!-- Designer choice card -->
+            <a href="signupstep2.html" class="choice" id="designer">
+                <h3>I want to</h3>
+                <h2>be a designer</h2>
+                <img class="choice-svg" src="designing.svg" alt="I want to be a designer">
+            </a>
+        </article>
+    </section>
+    <footer></footer>
+</body>
+<script src="signup1script.js"></script>
+
+</html>

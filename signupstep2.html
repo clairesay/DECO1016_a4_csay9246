@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup 2</title>
+    <link rel="stylesheet" href="workshopstyles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zor1bbb.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <script src="https://kit.fontawesome.com/4be1b0868a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body id="sign-up">
+    <!-- Simplified header -->
+    <header class="header" id="signup-header">
+        <a id="home-link" onclick="exit();"><img id="logo" src="logo.png" alt="Workshop Logo"></a>
+        <p id="signin-quote">Have an existing account?</p>
+        <a id="signin"> Sign In </a>
+    </header>
+
+    <!-- Progress Meter showing how many steps in the sign up process the user is -->
+    <section class="signupdiv" id="signup2">
+        <div class="progress-meter">
+            <div class="meter1"></div>
+            <div id="current" class="meter2"></div>
+            <div class="meter3"></div>
+            <div class="meter4"></div>
+        </div>
+
+        <!-- From local storage generate customised account type alert (either client or designer) -->
+        <div id="account-type-alert"> </div>
+        <!-- Giving existing users option to sign in from here -->
+        <p id="existing-account-link">Have an existing account? <span class="hyperlink">Sign in here</span></p>
+        <!-- Main sign up form -->
+        <form id="basicdetails">
+            <!-- Name -->
+            <article id="signup2-fields">
+                <article id="signup2-name">
+                    <!-- FirstName -->
+                    <label id="firstname-label" for="firstname">First Name
+                        <input type="text" id="firstname" name="firstname" autofocus required>
+                        <!-- ErrorText -->
+                        <p id="firstname-error" class="error-text"></p>
+                    </label>
+                    <!-- LastName -->
+                    <label id="lastname-label" for="lastName">Last Name
+                        <input type="text" id="lastname" name="lastname" required>
+                        <!-- ErrorText -->
+                        <p id="lastname-error" class="error-text"></p>
+                    </label>
+                </article>
+                <!-- Email -->
+                <label id="email-label" for="email">Email
+                    <input type="email" id="email" name="email" required>
+                    <!-- ErrorText -->
+                    <p id="email-error" class="error-text"></p>
+                </label>
+                <!-- Password -->
+                <label id="password-label" for="password">Password
+                    <div id="password-combo">
+                        <input type="password" id="password" name="password" required>
+                        <!-- Toggle to hide and show password -->
+                        <i class="far fa-eye inactive-eye" id="password-view-toggle"></i>
+                    </div>
+                    <!-- ErrorText -->
+                    <p id="password-error" class="error-text"></p>
+                </label>
+                <!-- Terms Warning -->
+                <label id="terms-label" for="terms">
+                    <pre>By clicking 'Create Account', you are confirming your agreement to Workshop's<span class="hyperlink"> terms and conditions</span> and <span class="hyperlink">user policy.</span></pre>
+                </label>
+                <!-- Back and Submit buttons -->
+                <div class="progress-buttons">
+                    <button class="back" type="button" id="leave-signup" onclick="back();">Back</button>
+                    <button class="next" type="button" id="account-creation" onclick="check();">Create Account</button>
+                </div>
+            </article>
+        </form>
+    </section>
+    <footer></footer>
+</body>
+<script src="signup2script.js"></script>
+
+</html>

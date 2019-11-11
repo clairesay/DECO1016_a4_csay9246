@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Client Dashboard</title>
+    <link rel="stylesheet" href="workshopstyles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zor1bbb.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <script src="https://kit.fontawesome.com/4be1b0868a.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="client-home-page">
+    <!-- Header with Navigation options (user is now signed in) -->
+    <header class="header" id="navigationheader">
+        <a id="home-link" href="clientmembershipendpoint.html"><img id="logo" src="logo.png" alt="Workshop Logo"></a>
+        <!-- Navigation sits in header for desktop, moves out for mobile -->
+        <nav id="menu-items">
+            <a href="clientmembershipendpoint.html" id="mydash-link">My Dash</a>
+            <a id="projects-link">Projects</a>
+            <a id="messages-link">Messages</a>
+        </nav>
+        <!-- Profile Picture customised if selected by user -->
+        <img id="picture-link" id="pro" src="defaultprofile.png" alt="Default Profile Image">
+    </header>
+
+    <!-- Banner to encourage user to post a project -->
+    <section id="client-banner" class="dashboarddiv">
+        <article class="steps">
+            <img class="designericons" src="project.svg" alt="Education and Work Experience">
+            <article class="step">
+                <h3 class="banner-title">Posting a project has never been easier</h3>
+                <p class="banner-text">Our project posting process is broken down into bite-sized steps for speedy
+                    completion!</p>
+                <!-- Call to action button -->
+                <button id="banner-action-client" type="button">Post a Project</button>
+            </article>
+        </article>
+    </section>
+
+    <!-- Users dashboard where high achieving designers appear -->
+    <section id="my-dash" class="dashboarddiv">
+        <h3>My Dash</h3>
+        <p>Search our top designers and the see the skills they can bring to your projects.</p>
+        <!-- Suggested Designer -->
+        <article class="designer-profile">
+            <!-- Image of Designer and their rating -->
+            <div class="visual-rating">
+                <img class="profile-thumbnail" id="designer" src="profilepicture.jpg" alt="Profile Picture">
+                <div class="star-rating">
+                    <!-- Three out of three stars yay -->
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>TOP SCORER!</p>
+                </div>
+            </div>
+            <!-- Basic details for designer -->
+            <div class="profile-details">
+                <!-- Name, Description and Individual Skills -->
+                <h3 class="profile-name">Username</h3>
+                <p class="jobdescription">Hi, I'm an awesome designer who has worked in the 3D modelling and fabrication
+                    industry as a product designer for over 10 years. I specialise in the design of biomedical
+                    technologies, fabricating 3D parts from as snall as the size of a penny to parts that fill up an
+                    entire room.</p>
+                <div class="individual-skills">
+                    <span class="greyed">Skills:</span>
+                    <p>Autodesk Inventor</p>
+                    <p>3DS Max</p>
+                    <p>Maya</p>
+                </div>
+            </div>
+        </article>
+        <!-- Suggested Designer -->
+        <article class="designer-profile">
+            <div class="visual-rating">
+                <img class="profile-thumbnail" id="designer" src="profilepicture.jpg" alt="Profile Picture">
+                <div class="star-rating">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>TOP SCORER!</p>
+                </div>
+            </div>
+            <div class="profile-details">
+                <h3 class="profile-name">Username</h3>
+                <p class="jobdescription">Hi, I'm an awesome designer who has worked in the 3D modelling and fabrication
+                    industry as a product designer for over 10 years. I specialise in the design of biomedical
+                    technologies, fabricating 3D parts from as snall as the size of a penny to parts that fill up an
+                    entire room.</p>
+                <div class="individual-skills">
+                    <span class="greyed">Skills:</span>
+                    <p>Autodesk Inventor</p>
+                    <p>3DS Max</p>
+                    <p>Maya</p>
+                </div>
+            </div>
+        </article>
+        <!-- Suggested Designer -->
+        <article class="designer-profile">
+            <div class="visual-rating">
+                <img class="profile-thumbnail" id="designer" src="profilepicture.jpg" alt="Profile Picture">
+                <div class="star-rating">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>TOP SCORER!</p>
+                </div>
+            </div>
+            <div class="profile-details">
+                <h3 class="profile-name">Username</h3>
+                <p class="jobdescription">Hi, I'm an awesome designer who has worked in the 3D modelling and fabrication
+                    industry as a product designer for over 10 years. I specialise in the design of biomedical
+                    technologies, fabricating 3D parts from as snall as the size of a penny to parts that fill up an
+                    entire room.</p>
+                <div class="individual-skills">
+                    <span class="greyed">Skills:</span>
+                    <p>Autodesk Inventor</p>
+                    <p>3DS Max</p>
+                    <p>Maya</p>
+                </div>
+            </div>
+        </article>
+        <!-- Suggested Designer -->
+        <article class="designer-profile">
+            <div class="visual-rating">
+                <img class="profile-thumbnail" id="designer" src="profilepicture.jpg" alt="Profile Picture">
+                <div class="star-rating">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>TOP SCORER!</p>
+                </div>
+            </div>
+            <div class="profile-details">
+                <h3 class="profile-name">Username</h3>
+                <p class="jobdescription">Hi, I'm an awesome designer who has worked in the 3D modelling and fabrication
+                    industry as a product designer for over 10 years. I specialise in the design of biomedical
+                    technologies, fabricating 3D parts from as snall as the size of a penny to parts that fill up an
+                    entire room.</p>
+                <div class="individual-skills">
+                    <span class="greyed">Skills:</span>
+                    <p>Autodesk Inventor</p>
+                    <p>3DS Max</p>
+                    <p>Maya</p>
+                </div>
+            </div>
+        </article>
+        <!-- Suggested Designer -->
+        <article class="designer-profile">
+            <div class="visual-rating">
+                <img class="profile-thumbnail" id="designer" src="profilepicture.jpg" alt="Profile Picture">
+                <div class="star-rating">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>TOP SCORER!</p>
+                </div>
+            </div>
+            <div class="profile-details">
+                <h3 class="profile-name">Username</h3>
+                <p class="jobdescription">Hi, I'm an awesome designer who has worked in the 3D modelling and fabrication
+                    industry as a product designer for over 10 years. I specialise in the design of biomedical
+                    technologies, fabricating 3D parts from as snall as the size of a penny to parts that fill up an
+                    entire room.</p>
+                <div class="individual-skills">
+                    <span class="greyed">Skills:</span>
+                    <p>Autodesk Inventor</p>
+                    <p>3DS Max</p>
+                    <p>Maya</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer></footer>
+</body>
+<script src="membershipendpointscript.js"></script>
+<script src="responsivenavbar.js"></script>
+
+</html>

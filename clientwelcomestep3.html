@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Client Welcome 3</title>
+    <link rel="stylesheet" href="workshopstyles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zor1bbb.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+</head>
+
+<body id="sign-up">
+    <!-- Header with Navigation options (user is now signed in) -->
+    <header class="header" id="navigationheader">
+        <a id="home-link" href="clientmembershipendpoint.html"><img id="logo" src="logo.png" alt="Workshop Logo"></a>
+        <!-- Navigation sits in header for desktop, moves out for mobile -->
+        <nav id="menu-items">
+            <a href="clientmembershipendpoint.html" id="mydash-link">My Dash</a>
+            <a id="projects-link">Projects</a>
+            <a id="messages-link">Messages</a>
+        </nav>
+        <!-- Profile Picture customised if selected by user -->
+        <img id="picture-link" id="pro" src="defaultprofile.png" alt="Default Profile Image">
+    </header>
+
+    <section class="signupdiv" id="signup3-client">
+        <article class="text-half">
+            <!-- Progress Meter showing how many steps in the sign up process the user is -->
+            <div class="progress-meter">
+                <div class="meter1"></div>
+                <div class="meter2"></div>
+                <div id="current" class="meter3"></div>
+                <div class="meter4"></div>
+            </div>
+            <!-- Welcome Image for mobile -->
+            <img class="welcome-img-mobile" src="clientwelcomemobile.jpg" alt="Relaxed Client">
+            <!-- Welcome Text -->
+            <h1 id="welcome-title"></h1>
+            <h2>Welcome to Workshop</h2>
+            <p>We promise to make outsourcing a great designer, easy peasy.</p>
+            <p>Help us out with a few extra details so we can give you the best experience we have to offer.</p>
+            <!-- Quit and Next Buttons -->
+            <div class="progress-buttons">
+                <a href="clientmembershipendpoint.html" class="cancel">I'll Pass</a>
+                <a href="clientsignupstep4.html" class="next">Sure!</a>
+            </div>
+        </article>
+        <!-- Welcome Image for Desktop -->
+        <img class="welcome-img" src="clientwelcome.jpg" alt="Relaxed Client">
+    </section>
+    <footer></footer>
+</body>
+<script src="signup3script.js"></script>
+<script src="responsivenavbar.js"></script>
+
+</html>
