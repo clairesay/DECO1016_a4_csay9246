@@ -67,7 +67,7 @@ function exit() {
             .then((value) => {
                 switch (value) {
                     case "catch":
-                        window.location.href = "landing.html";
+                        window.location.href = "index.html";
                         break;
                     default:
                 }
@@ -75,7 +75,7 @@ function exit() {
     //If user hasn't inputted any information, direct to landing page
     } else {
         console.log(document.getElementById('home-link'));
-        document.getElementById('home-link').setAttribute('href', 'landing.html')
+        document.getElementById('home-link').setAttribute('href', 'index.html')
     }
 }
 
