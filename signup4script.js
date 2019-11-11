@@ -54,7 +54,7 @@ function readURL(input) {
     reader.onload = function (e) {
       document.getElementById('accountImage').style.backgroundImage = "none";
       document.getElementById('accountImage').style.backgroundImage = 'url(' + e.target.result + ')';
-      //now checking for local storage, then placing the image in local storage for the next step
+      //now checking for the local storage, then placing the image in local storage for the next step
       if (typeof (Storage) !== "undefined") {
         localStorage.setItem('uploadedImage', e.target.result);
       }
