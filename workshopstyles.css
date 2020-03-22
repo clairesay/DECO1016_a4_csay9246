@@ -622,7 +622,6 @@ span {
 .box-fields label[for="client-radio"], label[for="designer-radio"] {
     background-color: transparent;
     color: rgb(153, 153, 153);
-    font-size: 16px;
     text-align: center;
     height: 1.5em;
     padding: 5px 10px;
